@@ -9,6 +9,8 @@ import java.util.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 
+// This class handles the effort related to opening and reading the data file,
+// and parses the needed information with available methods to access data later.
 class GreatExpectations extends Thread
 {
   // Java classes can have private members that are not accessible outside the class

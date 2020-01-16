@@ -41,7 +41,11 @@ Hello World
 
 ## Folder Structure
 
-Code is saved into the `src` folder.
+* Code is saved into the `src` folder.
+* Data is saved into the `data` folder.
 
+---
+
+Footnotes:
 
 [^1]: the command `cd` refers to the action of [change directory](https://en.wikipedia.org/wiki/Cd_(command)) and is an easier typed abbreviation :)
