@@ -19,7 +19,7 @@ class GreatExpectations extends Thread
   // Java members can be final, meaning they can't be changed
   final static String data = "../data/great_expectations.txt";
 
-  // this is a default constructor that gets called when an object is created
+  // This is a default constructor that gets called when an object is created
   public GreatExpectations()
   {
     System.out.println("Constructor called. Parsing this file: " + data);
@@ -37,7 +37,7 @@ class GreatExpectations extends Thread
     this.chapters = i;
   }
 
-  // implementation in its own function with default access modifier to the class
+  // Implementation in its own function with default access modifier to the class
   void openBookandStudy()
   {
     System.out.print(" starting method openBookandStudy ");
@@ -54,10 +54,10 @@ class GreatExpectations extends Thread
           String s = scanner.nextLine();
           if (s.contains("Chapter"))
           {
-            // increment the counter, this is the only necessary line in this if block
+            // Increment the counter, this is the only necessary line in this if block
             counter += 1;
 
-            // Thread sleeping is for cosmetic reasons as the . is printed to screen
+            // Thread sleeping is for cosmetic reasons as . is printed to screen
             Thread.sleep(300);
             System.out.print(".");
           }
@@ -65,7 +65,7 @@ class GreatExpectations extends Thread
       // Good habit to close the scanner after done reading a file
       scanner.close();
 
-      // Make thread sleet, for cosmetic reasons
+      // Make thread sleep, for cosmetic reasons
       Thread.sleep(100);
 
     } catch (Exception e) {
@@ -86,12 +86,12 @@ public class Main
   // There can only be one main method.
   public static void main(String[] args)
   {
-    GreatExpectations thissemester = new GreatExpectations();
-    thissemester.openBookandStudy();
+    GreatExpectations thisSemester = new GreatExpectations();
+    thisSemester.openBookandStudy();
 
     // Print to console w/o new line
     System.out.print("Charles Dickens wrote ");
-    System.out.print(thissemester.getGreatExpectations());
+    System.out.print(thisSemester.getGreatExpectations());
 
     // Print to console w/ new line
     System.out.println(" chapters in his book Great Expectations.");
